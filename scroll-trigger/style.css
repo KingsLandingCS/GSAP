@@ -9,52 +9,31 @@ html,
 body {
     height: 100%;
     width: 100%;
-}
-
-h1 {
-    font-size: 50px;
-    position: relative;
-    background: red;
-    padding: 10px;
-}
-
-h2 {
-    font-size: 50px;
-    position: relative;
-    background: yellow;
-    padding: 10px;
+    overflow-x: hidden;
 }
 
 #page1 {
     height: 100%;
     width: 100%;
-    background: lightblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: rgb(108, 190, 218);
+    padding: 50vw 0;
 }
 
 #page2 {
     height: 100%;
     width: 100%;
-    background: rgb(111, 171, 190);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    background: rgb(108, 190, 218);
+}
+
+#page2 h1 {
+    font-size: 40vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    transform: translateX(-150%);
 }
 
 #page3 {
     height: 100%;
     width: 100%;
-    background: rgb(85, 126, 139);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#box {
-    height: 300px;
-    width: 300px;
-    background: crimson;
+    background: #000;
 }
