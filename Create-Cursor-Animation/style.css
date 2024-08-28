@@ -15,6 +15,10 @@ body {
     height: 100%;
     width: 100%;
     background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 #cursor {
@@ -23,4 +27,32 @@ body {
     background: #fff;
     border-radius: 50%;
     position: fixed;
+    font-size: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 9;
+}
+
+#image {
+    height: 30vh;
+    width: 60vw;
+    position: relative;
+}
+
+#image img {
+    height: 100%;
+    width: 100%;
+    background: center no-repeat;
+    object-fit: cover;
+}
+
+#overlay {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    
 }
