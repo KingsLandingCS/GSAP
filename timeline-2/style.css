@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: aeonik;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background: url(https://images.pexels.com/photos/27547456/pexels-photo-27547456/free-photo-of-clouds.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);
+    background-size: cover;
+    background-position: center;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 50px;
+    color: #fff;
+}
+
+#nav h2 {
+    font-size: 30px;
+}
+
+#nav i {
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#full {
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    background: #ffffff80;
+    top: 0;
+    right: -40%;
+    backdrop-filter: blur(100px);
+    padding: 150px 60px;
+}
+
+#full h4 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#full i {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+}
