@@ -21,7 +21,7 @@ function breakText() {
 
 breakText();
 
-gsap.from("h1, .first-half", {
+gsap.from(" .first-half", {
     y: 80,
     duration: 0.6,
     delay: 0.5,
@@ -29,7 +29,7 @@ gsap.from("h1, .first-half", {
     opacity: 0
 })
 
-gsap.from("h1, .second-half", {
+gsap.from(" .second-half", {
     y: 80,
     duration: 0.6,
     delay: 0.5,
