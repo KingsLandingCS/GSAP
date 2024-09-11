@@ -3,10 +3,16 @@ function breakText() {
     var h1Text = h1.textContent;
 
     var splittedText = h1Text.split("");
+
+    var halfValue = Math.floor(splittedText.length / 2);
     var clutter = "";
 
-    splittedText.forEach((e) => {
-        clutter += `<span>${e}</span>`;
+    splittedText.forEach((e, i) => {
+        if (i < halfValue) {
+            clutter += `<span class="first-half">${e}</span>`
+        } else {
+            clutter += `<span class="second-half">${e}</span>`
+        }
     })
 
     h1.innerHTML = clutter;
@@ -15,11 +21,19 @@ function breakText() {
 
 breakText();
 
-gsap.from("h1 span", {
-    y: 50,
-    opacity: 0,
-    duration: 1,
+gsap.from("h1, .first-half", {
+    y: 80,
+    duration: 0.6,
     delay: 0.5,
-    stagger: 0.4
+    stagger: 0.15,
+    opacity: 0
+})
+
+gsap.from("h1, .second-half", {
+    y: 80,
+    duration: 0.6,
+    delay: 0.5,
+    stagger: -0.15,
+    opacity: 0
 })
 
