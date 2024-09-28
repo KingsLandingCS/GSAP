@@ -65,14 +65,18 @@ nav button {
 
 .center-part-1 {
     height: 100%;
-    width: 45%;
-}
-
-.center-part-1 h1 {
-    font-size: 80px;
+    width: 44%;
+    background: lightseagreen;
 }
 
 .center-part-2 {
     height: 100%;
-    width: 50%;
+    background: lightcoral;
+    width: 56%;
+}
+
+.center-part-1 h1 {
+    line-height: 1.1;
+    font-size: 110px;
+    font-family: monospace;
 }
